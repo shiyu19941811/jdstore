@@ -8,10 +8,12 @@ Rails.application.routes.draw do
  root 'products#index'
 
  resources :carts do
-   collection do 
+   collection do
      delete :clean
    end
  end
+
+ resources :cart_items
 
  resources :products do
    member do
