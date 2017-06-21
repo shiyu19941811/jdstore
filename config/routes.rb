@@ -22,4 +22,8 @@ Rails.application.routes.draw do
      post :add_to_cart
    end
  end
+
+ namespace :account do
+   resources :orders
+ end
 end
